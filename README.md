@@ -44,6 +44,7 @@ Yakut language processing software, models and datasets.
 ## 7) LLM
 
 1. [Qwen/Qwen3-14B](https://huggingface.co/lab-ii/Aina-14B-Instruct-01-10-2025)
+2. [jhu-clsp/mmBERT-base](https://huggingface.co/jhu-clsp/mmBERT-base) -- Sakha mentioned on model page
 
 ## 8) Semantic
 
