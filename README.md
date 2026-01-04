@@ -37,14 +37,13 @@ Today, Sakha is officially written in Cyrillic; Latin forms are of historical an
 
 1. Russian-Yakut and Yakut-Russian [dictionaries](https://sakhatyla.ru/) [on Github](https://github.com/ogpetrov/sakha-nlp/blob/main/data/btsja_parsed_v01.csv) [1] -- 18,262 words
 2. Comprehensive Explanatory [Dictionary](https://igi.ysn.ru/btsja/index.php?lang=ru) of the Yakut Language
-
+3. [Vocabulary Sakha](https://wold.clld.org/vocabulary/19) -- 1,588 meaning-word pairs(Sakha-English)
 
 ## 4) NLP tools
 
 0. [Yandex Translate](https://translate.yandex.ru/?source_lang=sah&target_lang=ru)
-1. [Apertium](https://github.com/apertium/apertium-sah)
-2. Zou Y., Lyles N. OzQyrqBERT-The First Steps towards a Universal Turkic Language Part-of-Speech Tagger.
-3. [Morphological Analyzer](https://github.com/nicolascortegoso/yakutmorph)
+1. [Apertium](https://github.com/apertium/apertium-sah) -- Supports morphological analysis, tagging (analysis + disambiguation), morphological generation
+2. [Morphological Analyzer](https://github.com/nicolascortegoso/yakutmorph)
 
 ## 5) Websites on Yakut(Saha) language 
 
@@ -59,25 +58,28 @@ Today, Sakha is officially written in Cyrillic; Latin forms are of historical an
 
 ## 7) LLM
 
-1. [Qwen/Qwen3-14B](https://huggingface.co/lab-ii/Aina-14B-Instruct-01-10-2025)
+1. [lab-ii/Aina-14B-Instruct-01-10-2025](https://huggingface.co/lab-ii/Aina-14B-Instruct-01-10-2025) -- sft version of Qwen/Qwen3-14B
 
     [pretrain](https://huggingface.co/datasets/ailabykt/sakha-corpus-mono) -- ~232K rows
 
     [SFT](https://huggingface.co/datasets/lab-ii/sakha_chat_ml-sft) -- 10,350 pairs
-2. [jhu-clsp/mmBERT-base](https://huggingface.co/jhu-clsp/mmBERT-base) -- Sakha mentioned on model page, 307M params
-3. [bamaxi/ruBert-base-sakha](https://huggingface.co/bamaxi/ruBert-base-sakha) -- 200M params
-4. [ai-forever/mGPT-1.3B-yakut](https://huggingface.co/ai-forever/mGPT-1.3B-yakut)
+2. [jhu-clsp/mmBERT-base](https://huggingface.co/jhu-clsp/mmBERT-base) -- Sakha mentioned on model page, 307M params, built on ModernBERT foundation with Flash Attention 2 and unpadding techniques, trained on over 1800 languages with progressive inclusion strategy
+3. [bamaxi/ruBert-base-sakha](https://huggingface.co/bamaxi/ruBert-base-sakha) -- 200M params, no more info found
+4. [ai-forever/mGPT-1.3B-yakut](https://huggingface.co/ai-forever/mGPT-1.3B-yakut) -- GPT-3 architecture using GPT-2 sources and the sparse attention mechanism, trained on Wikipedia and C4 corpus
+5. Zou Y., Lyles N. OzQyrqBERT-The First Steps towards a Universal Turkic Language Part-of-Speech Tagger. -- 12 layers, 768 hidden dimensions, 12 attention heads, 110M params; author plans to expand the model’s coverage to perform 
+POS tagging across a broader range of Turkic languages, including Turkish, Azerbaijani, 
+Uyghur, Kazakh, Tatar, and Yakut. Only paper available.
 
 ## 8) Semantic
 
-1. [MTEB task dataset(classify language by text)](https://huggingface.co/datasets/mteb/CyrillicTurkicLangClassification) -- Cyrillic dataset of 8 Turkic languages spoken in Russia and former USSR
+1. [MTEB task dataset(classify language by text)](https://huggingface.co/datasets/mteb/CyrillicTurkicLangClassification) -- Cyrillic dataset of 8 Turkic languages spoken in Russia and former USSR, 9K texts for each language(inluding Sakha)
 
 ## 9) Research groups
 
-1. SIGTURK—ACL -- An ACL Special Interest Group focusing on research in computational linguistics (NLP) for Turkic languages
-2. TurkLang -- A long-running international conference series on computational and linguistic aspects of Turkic languages (text processing, corpora, MT, speech tech, etc.).
-3. Turkic Languages -- biannual peer-reviewed journal
-4. Northwest Linguistics Conference 
+1. [SIGTURK—ACL](https://sigturk.github.io/) -- An ACL Special Interest Group focusing on research in computational linguistics (NLP) for Turkic languages
+2. [TurkLang](http://www.turklang.net/en/) -- A long-running international conference series on computational and linguistic aspects of Turkic languages (text processing, corpora, MT, speech tech, etc.).
+3. [Turkic Languages](https://www.harrassowitz-verlag.de/journals_377.ahtml) -- biannual peer-reviewed journal
+4. [Sakha Apertium Authors](https://wiki.apertium.org/wiki/Apertium-sah/stats)
 
 ## 10) Other sources
 
